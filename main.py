@@ -4,11 +4,14 @@
 import torch
 import numpy as np
 import torch.nn as nn
-from src.organize_data import load_key_tone_dict
+from src.prepare_data import load_songid_tone_dict
 
-device = torch.device('mps')
+device = (
+    "mps"
+    if torch.mps.is_available()
+    else "cuda" if torch.cuda.is_available() else "cpu"
+)
 
 # key_tone_dict包含各个歌的调式信息，内部是一个列表，表示每首歌的1或多个片段
 # 其中每个片段是一个字典，包括'beat'（ TODO 还不知道是啥）,'tonic','scale'三个值
-key_tone_dict = load_key_tone_dict()
-print(key_tone_dict['qveoYyGGodn'][0]['tonic'],key_tone_dict["qveoYyGGodn"][0]['scale'])
+songid_tone_dict = load_songid_tone_dict()

@@ -1,0 +1,3418 @@
+{
+    "id": 690066,
+    "hash": "nZgWrlJwmry",
+    "split": "train",
+    "urls": {
+        "artist": "https://www.hooktheory.com/theorytab/artists/c/cobu",
+        "song": "https://www.hooktheory.com/theorytab/view/cobu/fantasy-maiden-wars-dream---face-to-heart-ii",
+        "clip_api": "https://api.hooktheory.com/v1/songs/public/nZgWrlJwmry",
+        "clip": "https://hookpad.hooktheory.com/?idOfSong=nZgWrlJwmry"
+    },
+    "youtube": {
+        "id": "CYY_ztr-0_8",
+        "sync": {
+            "abs": null,
+            "rel": [
+                0.19888326308256074,
+                0.5085615359322544
+            ]
+        }
+    },
+    "json": {
+        "version": 1,
+        "chords": [
+            {
+                "root": 6,
+                "beat": 1,
+                "duration": 8,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 9,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 1,
+                "beat": 13,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 6,
+                "beat": 17,
+                "duration": 8,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 25,
+                "duration": 1,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 26,
+                "duration": 1,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 7,
+                "beat": 27,
+                "duration": 1,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "harmonicMinor",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 7,
+                "beat": 28,
+                "duration": 1,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "major",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 1,
+                "beat": 29,
+                "duration": 2,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [
+                    9
+                ],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 3,
+                "beat": 31,
+                "duration": 2,
+                "type": 7,
+                "inversion": 2,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "harmonicMinor",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 6,
+                "beat": 33,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "major",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 37,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": [
+                    0,
+                    2,
+                    4,
+                    5,
+                    8,
+                    9,
+                    11
+                ],
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 41,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 4,
+                "beat": 45,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": [
+                    0,
+                    2,
+                    3,
+                    6,
+                    7,
+                    9,
+                    10
+                ],
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 4,
+                "beat": 49,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 3,
+                "beat": 53,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 6,
+                "beat": 57,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 61,
+                "duration": 2,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 63,
+                "duration": 2,
+                "type": 5,
+                "inversion": 1,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "major",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 6,
+                "beat": 65,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "major",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 69,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": [
+                    0,
+                    2,
+                    4,
+                    5,
+                    8,
+                    9,
+                    11
+                ],
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 73,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 4,
+                "beat": 77,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": [
+                    0,
+                    2,
+                    3,
+                    6,
+                    7,
+                    9,
+                    10
+                ],
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 4,
+                "beat": 81,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 5,
+                "beat": 85,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 6,
+                "beat": 89,
+                "duration": 4,
+                "type": 7,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 7,
+                "beat": 93,
+                "duration": 4,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "root": 7,
+                "beat": 97,
+                "duration": 12,
+                "type": 5,
+                "inversion": 0,
+                "applied": 0,
+                "adds": [],
+                "omits": [],
+                "alterations": [],
+                "suspensions": [],
+                "pedal": null,
+                "alternate": "",
+                "borrowed": "",
+                "isRest": false,
+                "recordingEndBeat": null
+            }
+        ],
+        "notes": [
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 1,
+                "duration": 1.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 2.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 2.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 2.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 3,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 3.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 3.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 4,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 4.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 4.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 4.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 1,
+                "beat": 5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 5.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 5.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 6,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 6.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 1,
+                "beat": 6.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 6.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 7,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 8,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 8.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 1,
+                "beat": 9,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 0,
+                "beat": 9.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 9.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 10,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 10.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 1,
+                "beat": 10.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 10.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 11,
+                "duration": 0.75,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 11.75,
+                "duration": 0.75,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 12.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 13,
+                "duration": 1.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 14.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 14.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 14.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 15,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 16,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 17,
+                "duration": 1.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 18.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 18.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 18.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 19,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 19.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 19.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 20,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 20.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 20.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 20.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 1,
+                "beat": 21,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 2,
+                "beat": 21.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 2,
+                "beat": 22,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 22.25,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 1,
+                "beat": 22.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 22.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 23,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 24,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 24.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 24.75,
+                "duration": 0.25,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 1,
+                "beat": 25,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 25.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": 1,
+                "beat": 26,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 1,
+                "beat": 26.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 2,
+                "beat": 27,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 27.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 2,
+                "beat": 28,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 1,
+                "beat": 28.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 2,
+                "beat": 29,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 2,
+                "beat": 30,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 2,
+                "beat": 31,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 2,
+                "beat": 32,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 33,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 35,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 36,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 37,
+                "duration": 2.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 39.5,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 40,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 40.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 41,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 42,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 42.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 43,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 44,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 45,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 46.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 46.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 47,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 48,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": -1,
+                "beat": 48.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "6",
+                "octave": -1,
+                "beat": 49,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": -1,
+                "beat": 50,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "6",
+                "octave": -1,
+                "beat": 50.5,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 52,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": -1,
+                "beat": 53,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 54,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 54.5,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": -1,
+                "beat": 56,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 57,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 58,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 58.5,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 60,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 61,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "#7",
+                "octave": -1,
+                "beat": 63,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 65,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 67,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 69,
+                "duration": 2.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 1,
+                "beat": 71.5,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 72,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 72.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 73,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 74,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 74.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 75,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 76,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 77,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 78.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 78.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 79,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 80,
+                "duration": 0.5,
+                "isRest": true,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": -1,
+                "beat": 80.5,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "6",
+                "octave": -1,
+                "beat": 81,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": -1,
+                "beat": 82,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "6",
+                "octave": -1,
+                "beat": 82.5,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 84,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": -1,
+                "beat": 85,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 86,
+                "duration": 0.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 86.5,
+                "duration": 1.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": -1,
+                "beat": 88,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "1",
+                "octave": 0,
+                "beat": 89,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 90,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 91,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 92,
+                "duration": 1,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "5",
+                "octave": 0,
+                "beat": 93,
+                "duration": 3.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 1,
+                "beat": 96.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 1,
+                "beat": 96.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 1,
+                "beat": 97,
+                "duration": 3.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": 0,
+                "beat": 100.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": 0,
+                "beat": 100.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": 0,
+                "beat": 101,
+                "duration": 3.5,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "3",
+                "octave": -1,
+                "beat": 104.5,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "4",
+                "octave": -1,
+                "beat": 104.75,
+                "duration": 0.25,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "2",
+                "octave": -1,
+                "beat": 105,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            },
+            {
+                "sd": "7",
+                "octave": -1,
+                "beat": 107,
+                "duration": 2,
+                "isRest": false,
+                "recordingEndBeat": null
+            }
+        ],
+        "keys": [
+            {
+                "beat": 1,
+                "scale": "minor",
+                "tonic": "D#"
+            },
+            {
+                "beat": 33,
+                "scale": "minor",
+                "tonic": "Bb"
+            }
+        ],
+        "tempos": [
+            {
+                "beat": 1,
+                "bpm": 147,
+                "swingFactor": 0,
+                "swingBeat": 0.5
+            }
+        ],
+        "meters": [
+            {
+                "beat": 1,
+                "numBeats": 4,
+                "beatUnit": 1
+            }
+        ],
+        "breaks": [],
+        "bands": [
+            {
+                "beat": 1,
+                "lead1": [
+                    {
+                        "mute": false,
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano Lead",
+                        "midiChannel": 1,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": true
+                    }
+                ],
+                "lead2": [
+                    {
+                        "mute": false,
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano Lead",
+                        "midiChannel": 2,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": true
+                    }
+                ],
+                "lead3": [
+                    {
+                        "mute": false,
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano Lead",
+                        "midiChannel": 3,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": true
+                    }
+                ],
+                "lead4": [
+                    {
+                        "mute": false,
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano Lead",
+                        "midiChannel": 4,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": true
+                    }
+                ],
+                "harmony": [
+                    {
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano 1/4s",
+                        "midiChannel": 5,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": true
+                    }
+                ],
+                "bass": [
+                    {
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Piano Bass-Dotted",
+                        "midiChannel": 9,
+                        "useHookpadOutput": true,
+                        "useMIDIOutput": false
+                    }
+                ],
+                "drums": [
+                    {
+                        "octaveOffset": 0,
+                        "velocity": 0.7,
+                        "specification": "Basic Pop",
+                        "midiChannel": 10,
+                        "useHookpadOutput": false,
+                        "useMIDIOutput": false
+                    }
+                ]
+            }
+        ],
+        "lyrics": {
+            "isOpen": false,
+            "isFocused": false,
+            "values": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "sections": [],
+        "cursor": {
+            "beat": 1,
+            "location": "cursor-note-staff"
+        },
+        "settings": {
+            "widthBeat": 36,
+            "zoom": 1,
+            "metronome": false,
+            "relativeNotation": true,
+            "staffMode": "note-staff-mode-collapsed",
+            "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+            "wrapModeMeasuresPerLine": 8,
+            "colorMode": "diatonic-centric",
+            "colorTheme": "color-theme-light",
+            "showMeasureStaff": true,
+            "showLoopStaff": true,
+            "showNoteStaff": true,
+            "showChordStaff": true,
+            "inactiveMelodyDisplay": "inactive-melody-transparent",
+            "showOnlyStableInStaff": false,
+            "midiOutputLatency": 0,
+            "compressorValue": 0.5,
+            "compressorIsActive": false,
+            "enableExternalMP3": true,
+            "externalMP3URL": "",
+            "externalMP3StartBeat": 1,
+            "externalMP3Duration": 0,
+            "isExternalMP3Loaded": false,
+            "leadTrackNames": [
+                "Lead 1",
+                "Lead 2",
+                "Lead 3",
+                "Lead 4"
+            ]
+        },
+        "loopGui": {
+            "looping": false,
+            "beat": 1,
+            "duration": 16,
+            "loopIndex": -1
+        },
+        "youtube": {
+            "id": "https://www.youtube.com/watch?v=CYY_ztr-0_8",
+            "syncStart": 0.19888326308256074,
+            "syncEnd": 0.5085615359322544,
+            "syncMode": "youtube-sync-mode-test"
+        },
+        "keyFrames": [
+            {
+                "beat": 1
+            },
+            {
+                "beat": 109
+            }
+        ],
+        "activeMelodyIndex": 0,
+        "endBeat": 109,
+        "inactiveNotes": [
+            [
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 1,
+                    "duration": 1.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 2.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 2.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 2.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 3,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 3.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 3.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 4,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 4.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 4.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 4.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 1,
+                    "beat": 5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 5.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 5.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 6,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 6.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 1,
+                    "beat": 6.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 6.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 7,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 8,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 8.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 9,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 0,
+                    "beat": 9.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 9.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 10,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 10.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 10.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 10.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 11,
+                    "duration": 0.75,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 11.75,
+                    "duration": 0.75,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 12.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 13,
+                    "duration": 1.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 14.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 14.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 14.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 15,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 16,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 17,
+                    "duration": 1.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 18.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 18.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 18.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 19,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 19.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 19.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 20,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 20.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 20.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 20.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 1,
+                    "beat": 21,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 2,
+                    "beat": 21.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 2,
+                    "beat": 22,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 22.25,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 1,
+                    "beat": 22.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 22.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 23,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 24,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 24.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 24.75,
+                    "duration": 0.25,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 25,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 25.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 1,
+                    "beat": 26,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 26.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 2,
+                    "beat": 27,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 27.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 2,
+                    "beat": 28,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 28.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 2,
+                    "beat": 29,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 2,
+                    "beat": 30,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 2,
+                    "beat": 31,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 2,
+                    "beat": 32,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 33,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 35,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 36,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 37,
+                    "duration": 2.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 39.5,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 40,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 40.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 41,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 42,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 42.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 43,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 44,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 45,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 46.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 46.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 47,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 48,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": -1,
+                    "beat": 48.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": -1,
+                    "beat": 49,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": -1,
+                    "beat": 50,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": -1,
+                    "beat": 50.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 52,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": -1,
+                    "beat": 53,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 54,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 54.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": -1,
+                    "beat": 56,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 57,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 58,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 58.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 60,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 61,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "#7",
+                    "octave": -1,
+                    "beat": 63,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 65,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 67,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 69,
+                    "duration": 2.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 71.5,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 72,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 72.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 73,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 74,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 74.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 75,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 76,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 77,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 78.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 78.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 79,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 80,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": -1,
+                    "beat": 80.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": -1,
+                    "beat": 81,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": -1,
+                    "beat": 82,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": -1,
+                    "beat": 82.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 84,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": -1,
+                    "beat": 85,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 86,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 86.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": -1,
+                    "beat": 88,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 89,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 90,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 91,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 92,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 93,
+                    "duration": 3.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 96.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 96.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 97,
+                    "duration": 3.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 0,
+                    "beat": 100.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 0,
+                    "beat": 100.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 0,
+                    "beat": 101,
+                    "duration": 3.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": -1,
+                    "beat": 104.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": -1,
+                    "beat": 104.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": -1,
+                    "beat": 105,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": -1,
+                    "beat": 107,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                }
+            ],
+            [
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 1,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 5,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 9,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 13,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 17,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 21,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 25,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 29,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 33,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 37,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 41,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 45,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 49,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 53,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 57,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 61,
+                    "duration": 4,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 65,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 67,
+                    "duration": 2,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 69,
+                    "duration": 2.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 71.5,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 72,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 72.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 73,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 74,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 74.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 75,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 76,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 77,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 78.5,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 78.75,
+                    "duration": 0.25,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 79,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 0,
+                    "beat": 80,
+                    "duration": 0.5,
+                    "isRest": true,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 80.5,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": 0,
+                    "beat": 81,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 0,
+                    "beat": 82,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "6",
+                    "octave": 0,
+                    "beat": 82.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 84,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 0,
+                    "beat": 85,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 86,
+                    "duration": 0.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 86.5,
+                    "duration": 1.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "7",
+                    "octave": 0,
+                    "beat": 88,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "1",
+                    "octave": 1,
+                    "beat": 89,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "2",
+                    "octave": 1,
+                    "beat": 90,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "3",
+                    "octave": 1,
+                    "beat": 91,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "4",
+                    "octave": 1,
+                    "beat": 92,
+                    "duration": 1,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                },
+                {
+                    "sd": "5",
+                    "octave": 1,
+                    "beat": 93,
+                    "duration": 3.5,
+                    "isRest": false,
+                    "recordingEndBeat": null
+                }
+            ],
+            [],
+            []
+        ],
+        "visibleMelodies": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "soloAndMutedMelodies": {
+            "harmonyVolume": 0.7,
+            "externalFileVolume": 0.6,
+            "drumsVolume": 0.7,
+            "metronomeVolume": 0.3,
+            "lead1Volume": 0.7,
+            "lead2Volume": 0.7,
+            "lead3Volume": 0.7,
+            "lead4Volume": 0.7,
+            "mute": {
+                "master": false,
+                "harmony": false,
+                "external": false,
+                "drums": false,
+                "metronome": true,
+                "lead1": false,
+                "lead2": false,
+                "lead3": false,
+                "lead4": false,
+                "bass": false
+            },
+            "bassVolume": 0.7,
+            "volume": 1,
+            "solo": {
+                "harmony": false,
+                "external": false,
+                "drums": false,
+                "metronome": false,
+                "lead1": false,
+                "lead2": false,
+                "lead3": false,
+                "lead4": false,
+                "bass": false
+            },
+            "wasMutedBeforeSoloed": {
+                "harmony": false,
+                "external": false,
+                "drums": false,
+                "metronome": false,
+                "lead1": false,
+                "lead2": false,
+                "lead3": false,
+                "lead4": false,
+                "bass": false
+            }
+        },
+        "FXBypass": {},
+        "customFXParams": {},
+        "customSynthParams": {},
+        "pickup": false,
+        "fp": "2a4100b275f2b948b5eee2192d14eb7d6fa30e80"
+    }
+}

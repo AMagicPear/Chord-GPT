@@ -3,3 +3,4 @@ temp.mid
 test_midis
 cache
 datasets
+__pycache__
