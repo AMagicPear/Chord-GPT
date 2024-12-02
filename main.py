@@ -4,7 +4,7 @@
 import torch
 import numpy as np
 import torch.nn as nn
-from src.prepare_data import load_songid_tone_dict
+from src.prepare_data import load_song_id_tone_dict
 
 device = (
     "mps"
@@ -14,4 +14,4 @@ device = (
 
 # key_tone_dict包含各个歌的调式信息，内部是一个列表，表示每首歌的1或多个片段
 # 其中每个片段是一个字典，包括'beat'（ TODO 还不知道是啥）,'tonic','scale'三个值
-songid_tone_dict = load_songid_tone_dict()
+songid_tone_dict = load_song_id_tone_dict()

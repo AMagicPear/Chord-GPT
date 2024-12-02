@@ -1,8 +1,8 @@
-from src.prepare_data import load_songid_tone_dict
+from src.prepare_data import load_song_id_tone_dict
 import gzip
 import json
 
-key_tone_dict = load_songid_tone_dict()
+key_tone_dict = load_song_id_tone_dict()
 file_path = "./datasets/Hooktheory_Raw.json.gz"
 
 count = 0

@@ -6,7 +6,7 @@ import chords_tokenizer
 
 file_path = "./datasets/Hooktheory_Raw.json.gz"
 
-def load_songid_tone_dict() -> dict[int, list[dict]]:
+def load_song_id_tone_dict() -> dict[int, list[dict]]:
     """加载各首歌曲的调式调号信息"""
     key_tone_dict_path = "./datasets/key_tone_dict.csv"
     if os.path.exists(key_tone_dict_path):
@@ -34,27 +34,30 @@ def load_songid_tone_dict() -> dict[int, list[dict]]:
                 writer.writerow([song_id, json.dumps(keys)])
         return key_tone_dict
 
-def load_songid_chord_dict(split: str):
+def load_song_id_chords_dict(split: str):
     """读取各歌曲的和弦列表"""
-    song_id_chords_dict_path = './datasets/songid_chord_dict.json'
+    song_id_chords_dict_path = f'./datasets/songid_chord_dict_{split}.json'
     song_id_chords_dict = dict()
     if os.path.exists(song_id_chords_dict_path):
-        song_id_chords_dict = json.load(song_id_chords_dict_path)
+        with open(song_id_chords_dict_path,'r') as f:
+            song_id_chords_dict = json.load(f)
     else:
         with gzip.open(file_path, "rt", encoding="utf-8") as file:
             data = json.load(file)
             for _, value in data.items():
-                song_id_chords_dict[value['id']] = value['json']['chords']
+                if(value['json'] and value['split'] is split):
+                    song_id_chords_dict[value['id']] = value['json']['chords']
         with open(song_id_chords_dict_path,'w+') as f:
             json.dump(song_id_chords_dict,f)
     return song_id_chords_dict
 
 if __name__ == "__main__":
-    key_tone_dict = load_songid_tone_dict()
-
-    # 检查键是否存在
-    song_id = 690062
-    if song_id in key_tone_dict:
-        print(key_tone_dict[song_id])
-    else:
-        print(f"Song ID {song_id} not found in key_tone_dict.")
+    load_song_id_chords_dict('a')
+    # key_tone_dict = load_song_id_tone_dict()
+    #
+    # # 检查键是否存在
+    # song_id = 690062
+    # if song_id in key_tone_dict:
+    #     print(key_tone_dict[song_id])
+    # else:
+    #     print(f"Song ID {song_id} not found in key_tone_dict.")
