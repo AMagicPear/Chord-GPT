@@ -26,7 +26,6 @@ scale_decode: list = [
     "phrygianDominant",
 ]
 
-
 class Chord:
     """首调记法的和弦"""
 
@@ -99,3 +98,8 @@ def decode(encoded_chords: list[list[int]]) -> list[Chord]:
 def chords_to_musicpy(chords: list[Chord]) -> musicpy.chord:
     """把本代码中定义和弦对象转换为musicpy的和弦对象"""
     pass
+
+def get_batch(split: str):
+    """生成小批量数据"""
+    # 从 datasets/Hooktheory_Raw.json.gz 读取标签为split的数据
+    # 自觉点，自己写好。【执行】

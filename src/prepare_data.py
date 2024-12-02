@@ -2,7 +2,9 @@ import gzip
 import json
 import os
 import csv
+import chords_tokenizer
 
+file_path = "./datasets/Hooktheory_Raw.json.gz"
 
 def load_songid_tone_dict() -> dict[int, list[dict]]:
     """加载各首歌曲的调式调号信息"""
@@ -18,7 +20,6 @@ def load_songid_tone_dict() -> dict[int, list[dict]]:
     else:
         result_dict = {}
         key_tone_dict = {}
-        file_path = "./datasets/Hooktheory_Raw.json.gz"
         with gzip.open(file_path, "rt", encoding="utf-8") as file:
             data = json.load(file)
             for _, value in data.items():
@@ -33,21 +34,27 @@ def load_songid_tone_dict() -> dict[int, list[dict]]:
                 writer.writerow([song_id, json.dumps(keys)])
         return key_tone_dict
 
-def get_batch(split: str):
-    """生成小批量数据"""
-    # 从 datasets/Hooktheory_Raw.json.gz 读取标签为split的数据
-    # 自觉点，自己写好。【执行】
+def load_songid_chord_dict(split: str):
+    """读取各歌曲的和弦列表"""
+    song_id_chords_dict_path = './datasets/songid_chord_dict.json'
+    song_id_chords_dict = dict()
+    if os.path.exists(song_id_chords_dict_path):
+        song_id_chords_dict = json.load(song_id_chords_dict_path)
+    else:
+        with gzip.open(file_path, "rt", encoding="utf-8") as file:
+            data = json.load(file)
+            for _, value in data.items():
+                song_id_chords_dict[value['id']] = value['json']['chords']
+        with open(song_id_chords_dict_path,'w+') as f:
+            json.dump(song_id_chords_dict,f)
+    return song_id_chords_dict
 
 if __name__ == "__main__":
-    # key_tone_dict = load_songid_tone_dict()
+    key_tone_dict = load_songid_tone_dict()
 
-    # # 检查键是否存在
-    # song_id = 690062
-    # if song_id in key_tone_dict:
-    #     print(key_tone_dict[song_id])
-    # else:
-    #     print(f"Song ID {song_id} not found in key_tone_dict.")
-    file_path = "./datasets/Hooktheory_Raw.json.gz"
-    with gzip.open(file_path, "rt", encoding="utf-8") as file:
-        data = json.load(file)
-        print(data.keys())
+    # 检查键是否存在
+    song_id = 690062
+    if song_id in key_tone_dict:
+        print(key_tone_dict[song_id])
+    else:
+        print(f"Song ID {song_id} not found in key_tone_dict.")

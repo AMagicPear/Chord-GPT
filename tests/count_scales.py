@@ -6,7 +6,7 @@ scales = set()
 
 with gzip.open(file_path,'rt',encoding='utf-8') as file:
     data = json.load(file)
-    for key, value in data.items():
+    for _, value in data.items():
         if value["json"]:
             keys = value['json']['keys']
             for key in keys:
