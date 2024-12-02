@@ -33,6 +33,10 @@ def load_songid_tone_dict() -> dict[int, list[dict]]:
                 writer.writerow([song_id, json.dumps(keys)])
         return key_tone_dict
 
+def get_batch(split: str):
+    """生成小批量数据"""
+    # 从 datasets/Hooktheory_Raw.json.gz 读取标签为split的数据
+    # 自觉点，自己写好。【执行】
 
 if __name__ == "__main__":
     # key_tone_dict = load_songid_tone_dict()

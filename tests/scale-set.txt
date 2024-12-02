@@ -1,0 +1,9 @@
+minor
+dorian
+locrian
+phrygian
+major
+harmonicMinor
+mixolydian
+phrygianDominant
+lydian
