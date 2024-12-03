@@ -4,3 +4,5 @@ test_midis
 cache
 datasets
 __pycache__
+/tests/*.json
+/tests/*.txt

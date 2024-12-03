@@ -1,63 +1,48 @@
 import gzip
 import json
 import os
-import csv
-import chords_tokenizer
+import torch
+import pickle
 
-file_path = "./datasets/Hooktheory_Raw.json.gz"
+file_path = "datasets/Hooktheory.json.gz"
+device = torch.device("mps" if torch.mps.is_available() else "cpu")
 
-def load_song_id_tone_dict() -> dict[int, list[dict]]:
-    """加载各首歌曲的调式调号信息"""
-    key_tone_dict_path = "./datasets/key_tone_dict.csv"
-    if os.path.exists(key_tone_dict_path):
-        key_tone_dict = {}
-        with open(key_tone_dict_path, "r", encoding="utf8") as file:
-            reader = csv.reader(file)
-            for row in reader:
-                song_id, keys = int(row[0]), json.loads(row[1])
-                key_tone_dict[song_id] = keys
-        return key_tone_dict
+
+def load_harmonys(split: str) -> dict[str, any]:
+    """从文件中读取各歌曲的和弦进行"""
+    harmony_cache = f"./cache/harmony_{split}.pkl"
+    harmony = []
+    if os.path.exists(harmony_cache):
+        with open(harmony_cache, "rb") as cache:
+            harmony = pickle.load(cache)
+        return harmony
     else:
-        result_dict = {}
-        key_tone_dict = {}
-        with gzip.open(file_path, "rt", encoding="utf-8") as file:
+        with gzip.open(file_path, "rt") as file:
             data = json.load(file)
-            for _, value in data.items():
-                if "json" in value:
-                    result_dict[value["id"]] = value["json"]
-        for song_id, value in result_dict.items():
-            if value:
-                key_tone_dict[song_id] = value["keys"]
-        with open(key_tone_dict_path, "w+", encoding="utf8") as file:
-            writer = csv.writer(file)
-            for song_id, keys in key_tone_dict.items():
-                writer.writerow([song_id, json.dumps(keys)])
-        return key_tone_dict
+            for value in data.values():
+                if value["split"] == split.upper():
+                    harmony.append(value["annotations"]["harmony"])
+        with open(harmony_cache, "wb") as cache:
+            pickle.dump(harmony, cache)
+        return harmony
 
-def load_song_id_chords_dict(split: str):
-    """读取各歌曲的和弦列表"""
-    song_id_chords_dict_path = f'./datasets/songid_chord_dict_{split}.json'
-    song_id_chords_dict = dict()
-    if os.path.exists(song_id_chords_dict_path):
-        with open(song_id_chords_dict_path,'r') as f:
-            song_id_chords_dict = json.load(f)
-    else:
-        with gzip.open(file_path, "rt", encoding="utf-8") as file:
-            data = json.load(file)
-            for _, value in data.items():
-                if(value['json'] and value['split'] is split):
-                    song_id_chords_dict[value['id']] = value['json']['chords']
-        with open(song_id_chords_dict_path,'w+') as f:
-            json.dump(song_id_chords_dict,f)
-    return song_id_chords_dict
 
-if __name__ == "__main__":
-    load_song_id_chords_dict('a')
-    # key_tone_dict = load_song_id_tone_dict()
-    #
-    # # 检查键是否存在
-    # song_id = 690062
-    # if song_id in key_tone_dict:
-    #     print(key_tone_dict[song_id])
-    # else:
-    #     print(f"Song ID {song_id} not found in key_tone_dict.")
+def encode_harmony(harmony: list):
+    """将一个和弦进行编码为Tensor"""
+    harmony_sequence = []
+    for chord in harmony:
+        chord_sequence = [
+            chord["onset"],
+            chord["offset"] - chord["onset"],
+            chord["root_pitch_class"],
+            *chord["root_position_intervals"],  # TODO: 任意的音阶映射到一个位置
+            chord["inversion"],
+        ]
+        harmony_sequence.append(chord_sequence)
+    harmony_tensor = torch.Tensor(harmony_sequence)
+    return harmony_tensor
+
+
+harmonys = load_harmonys("test")
+print(harmonys[0])
+print(encode_harmony(harmonys[0]))
