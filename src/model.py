@@ -1,18 +1,17 @@
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
+from src.prepare_data import get_batch_data
+import tqdm
 
 # 参数定义
-batch_size = 2
+batch_size = 64
 block_size = 4
 embedding_dim = 32
+device = torch.device("mps" if torch.mps.is_available() else "cpu")
+dropout = 0.2
 
-# 模拟和弦数据，每个batch有block_size个block，每个block有4个字段
-batch_data = {
-    "durations": torch.rand(batch_size, block_size, 1),  # 和弦持续小节数
-    "root_pitchs": torch.randint(0, 12, (batch_size, block_size, 1)),  # 根音偏移
-    "intervals": torch.randint(0, 2, (batch_size, block_size, 12)),  # 音程多热向量
-    "inversions": torch.randint(0, 4, (batch_size, block_size, 1)),  # 转位信息
-}
+xb, yb = get_batch_data("test", batch_size, block_size)
 
 
 class ChordEmbedding(nn.Module):
@@ -27,12 +26,12 @@ class ChordEmbedding(nn.Module):
 
         self.fusion_layer = nn.Linear(4 * embedding_dim, embedding_dim)  # 融合层
 
-    def forward(self, durations, root_pitchs, intervals, inversions):
+    def forward(self, batchdata):
         # 各字段嵌入
-        duration_emb = self.duration_embedding(durations)
-        root_pitch_emb = self.root_pitch_embedding(root_pitchs.squeeze(-1))
-        interval_emb = self.interval_embedding(intervals.float())
-        inversion_emb = self.inversion_embedding(inversions.squeeze(-1))
+        duration_emb = self.duration_embedding(batchdata["durations"])
+        root_pitch_emb = self.root_pitch_embedding(batchdata["root_pitchs"].squeeze(-1))
+        interval_emb = self.interval_embedding(batchdata["intervals"].float())
+        inversion_emb = self.inversion_embedding(batchdata["inversions"].squeeze(-1))
         # 拼接并融合
         combined_emb = torch.cat(
             [duration_emb, root_pitch_emb, interval_emb, inversion_emb], dim=-1
@@ -40,48 +39,64 @@ class ChordEmbedding(nn.Module):
         fused_emb = self.fusion_layer(combined_emb)
         return fused_emb
 
+class Head(nn.Module):
+    """自注意力头"""
 
-class ChordPredictor(nn.Module):
-    def __init__(
-        self,
-        embedding_dim,
-        num_heads,
-        num_layers,
-    ):
+    def __init__(self, head_size):
         super().__init__()
-        self.chord_embedding = ChordEmbedding(embedding_dim)
-        self.transformer = nn.TransformerEncoder(
-            nn.TransformerEncoderLayer(d_model=embedding_dim, nhead=num_heads),
-            num_layers=num_layers,
-        )
-        self.output_layer = nn.Linear(
-            embedding_dim, embedding_dim
-        )  # 可扩展到预测多字段
+        self.key = nn.Linear(embedding_dim, head_size, bias=False)
+        self.query = nn.Linear(embedding_dim, head_size, bias=False)
+        self.value = nn.Linear(embedding_dim, head_size, bias=False)
+        self.register_buffer("tril", torch.tril(torch.ones(block_size, block_size)))
 
-    def forward(self, durations, root_offsets, intervals, inversions):
-        # 嵌入和弦
-        chord_emb = self.chord_embedding(durations, root_offsets, intervals, inversions)
-        # 使用Transformer建模
-        transformer_output = self.transformer(chord_emb)
-        # 预测下一个和弦
-        prediction = self.output_layer(transformer_output)
-        return prediction
+        self.dropout = nn.Dropout(dropout)
+
+    def forward(self, x):
+        # 输入 (batch, time-step, channels)
+        # 输出 (batch, time-step, head size)
+        B, T, C = x.shape
+        k = self.key(x)  # (B,T,hs)
+        q = self.query(x)  # (B,T,hs)
+        # compute attention scores ("affinities")
+        wei = (
+            q @ k.transpose(-2, -1) * k.shape[-1] ** -0.5
+        )  # (B, T, hs) @ (B, hs, T) -> (B, T, T)
+        wei = wei.masked_fill(self.tril[:T, :T] == 0, float("-inf"))  # (B, T, T)
+        wei = F.softmax(wei, dim=-1)  # (B, T, T)
+        wei = self.dropout(wei)
+        # perform the weighted aggregation of the values
+        v = self.value(x)  # (B,T,hs)
+        out = wei @ v  # (B, T, T) @ (B, T, hs) -> (B, T, hs)
+        return out
 
 
-# 模拟输入
-durations = batch_data["durations"]
-root_pitchs = batch_data["root_pitchs"]
-intervals = batch_data["intervals"]
-inversions = batch_data["inversions"]
+class ChordModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.head = Head(embedding_dim)
 
-# chordembedding = ChordEmbedding(embedding_dim)
-# fused_emb = chordembedding.forward(durations,root_pitchs,intervals,inversions)
+    def forward(self, x, y):
+        out = self.head(x)
+        out = F.softmax(x)
+        loss = F.cross_entropy(out, y)
+        return out, loss
 
-# print(fused_emb.shape)
 
-# 初始化模型
-model = ChordPredictor(embedding_dim, num_heads=4, num_layers=2)
+chord_emd = ChordEmbedding(embedding_dim)
+xb, yb = get_batch_data("test", batch_size, block_size)
 
-# 前向传播
-output = model(durations, root_pitchs, intervals, inversions)
-print(output.shape)  # 输出形状为 (batch_size, block_size, embedding_dim)
+x_emb = chord_emd(xb)
+y_emb = chord_emd(yb)
+
+chord_model = ChordModel()
+optimizer = torch.optim.AdamW(chord_model.parameters(), lr=0.3)
+
+for opoch in tqdm.trange(100):
+    xb, yb = get_batch_data("train", batch_size, block_size)
+    x_emb = chord_emd(xb)
+    y_emb = chord_emd(yb)
+    out, loss = chord_model(x_emb, y_emb)
+    optimizer.zero_grad(set_to_none=True)
+    loss.backward()
+    optimizer.step()
+    tqdm.tqdm.write("loss:" + str(loss.item()))
