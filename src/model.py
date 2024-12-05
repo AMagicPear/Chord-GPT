@@ -77,7 +77,6 @@ class ChordModel(nn.Module):
 
     def forward(self, x, y):
         out = self.head(x)
-        out = F.softmax(x)
         loss = F.cross_entropy(out, y)
         return out, loss
 
@@ -85,8 +84,9 @@ class ChordModel(nn.Module):
 chord_emd = ChordEmbedding(embedding_dim)
 xb, yb = get_batch_data("test", batch_size, block_size)
 
-x_emb = chord_emd(xb)
-y_emb = chord_emd(yb)
+# x_emb = chord_emd(xb)
+# print(x_emb[0])
+# y_emb = chord_emd(yb)
 
 chord_model = ChordModel()
 optimizer = torch.optim.AdamW(chord_model.parameters(), lr=0.3)

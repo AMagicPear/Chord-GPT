@@ -30,6 +30,7 @@ def load_harmonys(split: str) -> list:
 def encode_chord_interval(interval: list):
     """采用多热编码，编码和弦的音程关系"""
     vector = torch.zeros(12, dtype=torch.float32)
+    vector[0] = 1.0
     for i in range(len(interval)):
         vector[sum(interval[0 : i + 1]) % 12] = 1.0
     return vector
