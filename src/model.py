@@ -5,14 +5,12 @@ from src.prepare_data import get_batch_data
 import tqdm
 
 # 参数定义
+
 batch_size = 64
 block_size = 4
 embedding_dim = 32
 device = torch.device("mps" if torch.mps.is_available() else "cpu")
 dropout = 0.2
-
-xb, yb = get_batch_data("test", batch_size, block_size)
-
 
 class ChordEmbedding(nn.Module):
     """和弦的嵌入层"""
@@ -80,23 +78,23 @@ class ChordModel(nn.Module):
         loss = F.cross_entropy(out, y)
         return out, loss
 
+if __name__ == '__main__':
+    chord_emd = ChordEmbedding(embedding_dim)
+    xb, yb = get_batch_data("test", batch_size, block_size)
 
-chord_emd = ChordEmbedding(embedding_dim)
-xb, yb = get_batch_data("test", batch_size, block_size)
+    # x_emb = chord_emd(xb)
+    # print(x_emb[0])
+    # y_emb = chord_emd(yb)
 
-# x_emb = chord_emd(xb)
-# print(x_emb[0])
-# y_emb = chord_emd(yb)
+    chord_model = ChordModel()
+    optimizer = torch.optim.AdamW(chord_model.parameters(), lr=0.3)
 
-chord_model = ChordModel()
-optimizer = torch.optim.AdamW(chord_model.parameters(), lr=0.3)
-
-for opoch in tqdm.trange(100):
-    xb, yb = get_batch_data("train", batch_size, block_size)
-    x_emb = chord_emd(xb)
-    y_emb = chord_emd(yb)
-    out, loss = chord_model(x_emb, y_emb)
-    optimizer.zero_grad(set_to_none=True)
-    loss.backward()
-    optimizer.step()
-    tqdm.tqdm.write("loss:" + str(loss.item()))
+    for opoch in tqdm.trange(100):
+        xb, yb = get_batch_data("train", batch_size, block_size)
+        x_emb = chord_emd(xb)
+        y_emb = chord_emd(yb)
+        out, loss = chord_model(x_emb, y_emb)
+        optimizer.zero_grad(set_to_none=True)
+        loss.backward()
+        optimizer.step()
+        tqdm.tqdm.write("loss:" + str(loss.item()))

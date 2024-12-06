@@ -1,6 +1,6 @@
 import torch
 import json
-from src.prepare_data import encode_chord_interval
+from src.prepare_data import encode_chord_interval_multihot
 import gzip
 
 with open("./tests/不常规音程集合.json", "r") as f:
