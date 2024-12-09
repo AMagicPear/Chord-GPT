@@ -5,6 +5,7 @@ import torch
 import pickle
 import random
 import musicpy
+import musicpy.database
 
 _polychords_dict = {
     (1, 4, 1, 4, 11): 0,
@@ -24,7 +25,9 @@ reverse_polychords_dict = {v: k for k, v in _polychords_dict.items()}
 chord_types = musicpy.database.chordTypes.keys()
 num_intervals = len(musicpy.database.NAME_OF_INTERVAL)  # 22
 num_chord_types = len(chord_types)  # 61
-chord_intevals_size = num_intervals + num_chord_types + len(_polychords_dict.keys())    # 95
+chord_intevals_size = (
+    num_intervals + num_chord_types + len(_polychords_dict.keys())
+)  # 95
 chord_vocab_size = chord_intevals_size * 12
 
 
@@ -79,9 +82,9 @@ def get_batch_data(split, batch_size, block_size) -> dict:
     batch_data_y = initialize_batch_data()
 
     for i in range(batch_size):
-        harmony = random.choice(harmonys_raw.values())
+        harmony = random.choice(list(harmonys_raw.values()))
         while harmony == None or len(harmony) - block_size - 1 <= 0:
-            harmony = random.choice(harmonys_raw)
+            harmony = random.choice(list(harmonys_raw.values()))
         start_idx = random.randint(0, len(harmony) - block_size - 1)
         selected_harmony = harmony[start_idx : start_idx + block_size + 1]
         for j in range(block_size):
@@ -169,22 +172,27 @@ def encode_chord_all(raw_chord: dict[str, any]):
 
 def decode_chord(root_pitch: int, interval_code: int, scale_pitch=0) -> musicpy.chord:
     if interval_code == 0:
-        chord_decoded = musicpy.C("C")
+        chord_decoded = musicpy.C([musicpy.N("C")])
     elif interval_code < num_intervals:
-        chord_decoded = musicpy.get_chord_by_interval('C',[interval_code])
+        chord_decoded = musicpy.get_chord_by_interval("C", [interval_code])
     elif interval_code < num_intervals + num_chord_types:
         chord_type_code = interval_code - num_intervals
         chord_type_reverse_dict = {
             idx: chord for idx, chords in enumerate(chord_types) for chord in chords
         }
         chord_type = chord_type_reverse_dict[chord_type_code]
-        chord_decoded = musicpy.get_chord('C',chord_type)
+        chord_decoded = musicpy.get_chord("C", chord_type)
     elif interval_code < chord_intevals_size:
         polychords_type_code = interval_code - num_intervals - num_chord_types
         poly_interval = list(reverse_polychords_dict[polychords_type_code])
-        chord_decoded = musicpy.get_chord_by_interval('C',poly_interval)
-    chord_decoded.up(scale_pitch)
-    return chord_decoded
+        chord_decoded = musicpy.get_chord_by_interval("C", poly_interval)
+    return chord_decoded.up(root_pitch + scale_pitch)
+
+
+def decode_chord_from_all_encoded(encoded_chord: int):
+    root_pitch = encoded_chord // chord_intevals_size
+    interval_code = encoded_chord % chord_intevals_size
+    return decode_chord(root_pitch, interval_code)
 
 
 if __name__ == "__main__":
@@ -195,6 +203,6 @@ if __name__ == "__main__":
     #         count_chord_type[encode_chord_all(chord)] += 1
     # print(count_chord_type)
     for i in range(chord_intevals_size):
-        chord_decoded = decode_chord(0,i)
-        print(chord_decoded,i)
-        musicpy.play(chord_decoded,wait=True)
+        chord_decoded = decode_chord(0, i)
+        print(chord_decoded, i)
+        musicpy.play(chord_decoded, wait=True)
